@@ -1,0 +1,25 @@
+# Render Blueprint: New → Blueprint → chọn repo miniapps-be. Tạo hai web service, mỗi service một thư mục.
+services:
+  - type: web
+    name: miniapp-kho-be
+    runtime: docker
+    rootDir: miniapp_kho_be
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      # Portal dùng để kiểm tra token Super App. Phải trùng portal mà Super App đang trỏ tới.
+      - key: PORTAL_API
+        value: https://miniapp-portal-be.onrender.com
+  - type: web
+    name: miniapp-nhansu-be
+    runtime: docker
+    rootDir: miniapp_nhansu_be
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORTAL_API
+        value: https://miniapp-portal-be.onrender.com

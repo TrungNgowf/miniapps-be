@@ -1,0 +1,4 @@
+node_modules
+.env
+# Ghi khi chạy, không đưa lên git
+data/leaves-live.json
