@@ -43,6 +43,6 @@ Giống Kho hàng: mini-app xin token qua bridge `auth.getToken` (trình duyệt
 1. `pnpm dev` ở đây.
 2. `cd ../../miniapp_samples && pnpm bundle nhan-su` → `out/nhan-su/bundle.zip` (≈ 19,9 MB, giới hạn 50 MB).
 3. Đăng lên portal: `appId` `nhan-su`, `permissions` rỗng, `requiredRoles` theo `miniapp.config.json`.
-4. Địa chỉ API trong app (mục **Tài khoản → Địa chỉ máy chủ**): iOS Simulator `http://localhost:4200`, Android Emulator `http://10.0.2.2:4200`, điện thoại thật `http://<IP máy>:4200`.
+4. Mặc định app gọi `https://miniapp-nhansu-be.onrender.com` (đặt trong `miniapp_samples/apps/nhan-su/.env`). Chạy backend trên máy thì đổi ở mục **Tài khoản → Địa chỉ máy chủ**: iOS Simulator `http://localhost:4200`, Android Emulator `http://10.0.2.2:4200`, điện thoại thật `http://<IP máy>:4200`.
 
 Tab **Hiệu năng** trong app đo: nạp/parse JSON 6 MB, lọc 20k bản ghi, tải 120 ảnh nhỏ/lớn, độ trễ và băng thông API, FPS, JS heap, lưới 600 ảnh.

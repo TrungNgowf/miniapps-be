@@ -7,7 +7,7 @@ Backend riêng của hai mini-app nặng, tách khỏi backend portal (`miniapp_
 | `miniapp_kho_be` | Kho hàng (`kho-hang`), Minh Phát | 4100 | [README](miniapp_kho_be/README.md) |
 | `miniapp_nhansu_be` | Nhân sự (`nhan-su`) | 4200 | [README](miniapp_nhansu_be/README.md) |
 
-Cả hai xác thực bằng token Super App, hỏi lại portal qua `GET /api/auth/me` (biến `PORTAL_API`).
+Bản deploy: `https://miniapp-kho-be.onrender.com`, `https://miniapp-nhansu-be.onrender.com`. Cả hai xác thực bằng token Super App, hỏi lại portal qua `GET /api/auth/me` (biến `PORTAL_API`).
 
 ## Deploy lên Render
 

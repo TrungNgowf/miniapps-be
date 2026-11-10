@@ -130,7 +130,7 @@ STORE=memory ADMIN_API_KEY=dev PORT=3000 CORS_ORIGIN=http://localhost:5173,http:
 3. Đăng zip lên portal. `appId` `kho-hang`, `permissions` rỗng, `requiredRoles` theo `miniapp.config.json`, đối tượng là tenant `minhphat`.
 4. Mở app trong Super App bằng một tài khoản Minh Phát có vai trò kho (ví dụ `toan.mai`).
 
-Địa chỉ API mặc định của mini-app là `http://localhost:4100`:
+Địa chỉ API mặc định của mini-app là bản trên Render, `https://miniapp-kho-be.onrender.com` (đặt trong `miniapp_samples/apps/kho-hang/.env`). Chạy backend trên máy thì đổi trong app:
 
 | Thiết bị | Địa chỉ API cần đặt |
 |---|---|
